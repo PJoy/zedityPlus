@@ -1,0 +1,259 @@
+/*----------------------------------------------------------------------------------------
+Zedity Content (iframe version)
+*/
+
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	vertical-align: top;
+	max-width: none;        
+	margin: 0;
+}
+.zedity-wrapper,
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	overflow: hidden;
+}
+.zedity-wrapper,
+.zedity-iframe-wrapper,
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	padding: 0;
+	border: 0;
+}
+.zedity-responsive,
+.zedity-responsive .zedity-box-Text .zedity-content {
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.zedity-iframe-wrapper.zedity-responsive-layout > iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*----------------------------------------------------------------------------------------
+Zedity Content
+*/
+
+.zedity-editor {
+	max-width: none !important;
+	z-index: 0 !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.zedity-editor.zedity-notheme * {
+	all: default;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Generic box
+*/
+
+.zedity-editor.zedity-notheme .zedity-box {
+	margin: 0 !important;
+	/*box-shadow: none !important;*/
+}
+
+.zedity-editor .zedity-box {
+	overflow: hidden !important;
+	box-sizing: content-box !important;
+}
+.zedity-editor .zedity-box.zedity-background {
+	box-sizing: border-box !important;
+}
+.zedity-editor .zedity-box-Text .zedity-content {
+	vertical-align: top;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Box content
+*/
+
+.zedity-editor.zedity-notheme .zedity-box div.zedity-content,
+.zedity-editor.zedity-notheme .zedity-box:not(.zedity-box-Html) iframe,
+.zedity-editor.zedity-notheme .zedity-box:not(.zedity-box-Html) object,
+.zedity-editor.zedity-notheme .zedity-box:not(.zedity-box-Html) embed,
+.zedity-editor.zedity-notheme .zedity-box:not(.zedity-box-Html) audio,
+.zedity-editor.zedity-notheme .zedity-box:not(.zedity-box-Html) video {
+	min-width: 100% !important;
+	min-height: 100% !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box img.zedity-content {
+	max-width: none !important;
+}
+
+/*----------------------------------------------------------------------------------------
+Image box
+*/
+
+/*reset image wrapped in <p> by TinyMCE*/
+.zedity-editor .zedity-box-Image figure,
+.zedity-editor .zedity-box-Image p {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+}
+
+.zedity-editor .zedity-box-Image img {
+	vertical-align: top !important;
+	max-height: none !important;
+	max-width: none !important;
+	padding: 0 !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Image img {
+	border: none !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Image a {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+
+
+/*----------------------------------------------------------------------------------------
+Text box
+*/
+
+.zedity-editor.zedity-notheme .zedity-box-Text span,
+.zedity-editor.zedity-notheme .zedity-box-Text a,
+.zedity-editor.zedity-notheme .zedity-box-Text p,
+.zedity-editor.zedity-notheme .zedity-box-Text h1,
+.zedity-editor.zedity-notheme .zedity-box-Text h2,
+.zedity-editor.zedity-notheme .zedity-box-Text h3,
+.zedity-editor.zedity-notheme .zedity-box-Text h4,
+.zedity-editor.zedity-notheme .zedity-box-Text h5,
+.zedity-editor.zedity-notheme .zedity-box-Text h6 {
+	margin: 0;
+	padding: 0 !important;
+	border: 0 !important;
+	min-height: 17px;
+	background: transparent !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Text ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul {
+	display: block !important;
+	margin: initial !important;
+	line-height: initial;
+	padding: 0 0 0 40px !important;
+	list-style-position: outside;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ul {
+	list-style-type: disc;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul {
+	list-style-type: circle;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol ul {
+	list-style-type: square;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol {
+	list-style-type: decimal;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol {
+	list-style-type: lower-alpha;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul ol {
+	list-style-type: lower-roman;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Text li {
+	display: list-item !important;
+	line-height: inherit !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text li div {
+	display: inline-block !important;
+}
+
+
+.zedity-editor.zedity-notheme .zedity-box-Text blockquote {
+	margin: 0px 0px 0px 40px !important;
+	border: none !important;
+	padding: 0px !important;
+	background: none !important;
+	font: inherit !important;
+	color: inherit !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Text b,
+.zedity-editor.zedity-notheme .zedity-box-Text strong {
+	font-weight: bold !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text i,
+.zedity-editor.zedity-notheme .zedity-box-Text em {
+	font-style: italic !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text u {
+	text-decoration: underline !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Text sub {
+	font-size: 0.7em !important;
+	vertical-align: sub !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text sup {
+	font-size: 0.7em !important;
+	vertical-align: super !important;
+}
+
+/*
+.zedity-editor.zedity-notheme .zedity-box-Text a,
+.zedity-editor.zedity-notheme .zedity-box-Text a:link,
+.zedity-editor.zedity-notheme .zedity-box-Text a:visited,
+.zedity-editor.zedity-notheme .zedity-box-Text a:hover {
+	color: blue !important;
+	text-decoration: underline !important;
+	cursor: pointer !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text a:active {
+	color: red !important;
+	text-decoration: underline !important;
+}
+*/
+
+
+/*----------------------------------------------------------------------------------------
+Watermark
+*/
+
+.zedity-editor .zedity-watermark,
+.zedity-editor .zedity-watermark span {
+	height: 22px !important;
+	line-height: 22px !important;
+	text-decoration: none !important;
+	text-transform: none !important;
+}
+
+

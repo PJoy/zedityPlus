@@ -1,0 +1,33 @@
+
+/*--------------------------------------------------------------------------------------*/
+/* Content overlay */
+
+#zedity_content_overlay {
+	/*display: none;*/
+	position: absolute;
+	background-color: rgba(80,210,80,0.6);
+	z-index: 1000001;
+	cursor: default;
+}
+
+#zedity_content_overlay img {
+	border: 1px solid #999;
+	background-color: #eee;
+	margin: 5px 0 0 5px;
+	padding: 2px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#zedity_content_overlay img:hover {
+	border-color: #555;
+	background-color: #ccc;
+}
+
+#zedity_content_overlay #zedity_premium_msg {
+	background: white;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	display: none;
+}
