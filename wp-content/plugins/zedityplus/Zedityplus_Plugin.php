@@ -110,13 +110,53 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 						}
 					}, 100); // check every 100ms
 				}
+
+				//alert('yo');
+
+				urls = [];
 			</script>
 		<?php
+		global $wpdb;
+
+		$sql="SELECT id FROM wpz_posts";
+
+		$posts = $wpdb->get_results($sql);
+
+		$urls = [];
+
+		foreach ($posts as $post)
+		{
+			$id = $post->id;
+			$tb = get_post_thumbnail_id($id);
+			$url = wp_get_attachment_url($tb);
+			if (strlen($url) > 1) {
+				//echo '<pre>'.$url.'</pre>';
+				array_push($urls,$url);
+				?>
+				<script>
+					urls.push('<?php echo $url ?>')
+				</script>
+<?php
+			}
+		}
+?>
+		<script>
+			jQuery('img').each(function(e,a){
+					//console.log(a.src);
+				urls.forEach(function(f){
+					if (a.src == f){
+						//console.log(f);
+						jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
+					}
+				});
+			})
+		</script>
+<?php
 	}
 
 	public function addActionsAndFilters() {
 
-		add_action('admin_menu', array(&$this, 'helloWorld'));
+		add_action('wp_footer', array(&$this, 'helloWorld'));
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
