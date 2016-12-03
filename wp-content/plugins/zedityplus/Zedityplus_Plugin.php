@@ -79,7 +79,18 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     public function upgrade() {
     }
 
-    public function addActionsAndFilters() {
+	public function helloWorld(){
+		echo 'hello<br>';
+		?>
+			<script>
+				//alert('yo');
+			</script>
+		<?php
+	}
+
+	public function addActionsAndFilters() {
+
+		add_action('wp_head', array(&$this, 'helloWorld'));
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
@@ -95,6 +106,9 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 
         // Add Actions & Filters
         // http://plugin.michael-simpson.com/?page_id=37
+
+
+
 
 
         // Adding scripts & styles to all pages
