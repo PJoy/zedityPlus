@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391881c-811a-4703-8864-adbf9324aa83" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/zedityplus/js/unminified.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/zedity/zedity.php" afterPath="$PROJECT_DIR$/wp-content/plugins/zedity/zedity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
     </list>
     <ignored path="zedity++.iws" />
@@ -22,87 +25,97 @@
     <favorites_list name="zedity++" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zedityplus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zedityplus_init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus_init.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+            <state relative-caret-position="370">
+              <caret line="102" column="171" selection-start-line="102" selection-start-column="171" selection-end-line="102" selection-end-column="171" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zedityplus_OptionsManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_OptionsManager.php">
+      <file leaf-file-name="unminified.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/js/unminified.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="194">
+              <caret line="1934" column="71" selection-start-line="1934" selection-start-column="71" selection-end-line="1934" selection-end-column="71" />
               <folding>
-                <marker date="1480760540000" expanded="true" signature="11700:11706" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="11706:11712" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="11712:11718" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="11731:11757" ph="..." />
-                <marker date="1480760540000" expanded="true" signature="12176:12182" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="12182:12188" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="12188:12194" ph=" " />
-                <marker date="1480760540000" expanded="true" signature="12207:12233" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="51946:51968" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="52406:52428" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="102134:102140" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="147521:147532" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="156994:157021" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="160335:160362" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="227708:227768" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="227831:227837" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="227837:227843" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="227843:227849" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="228024:228102" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="228195:228201" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="228201:228207" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="228207:228213" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="229444:229461" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="229568:229580" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="247448:247470" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="249515:249536" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="251026:251059" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="253789:253810" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="254271:254299" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="254959:254980" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="255097:255112" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="255243:255259" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="255274:255289" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="268289:268301" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="277849:277989" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="278001:278078" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="279410:279550" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="279563:279657" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="279685:279762" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="279894:279915" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="282393:282533" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="282545:282629" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="298944:298995" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="299034:299066" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="315920:315937" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="326431:326501" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="326541:326547" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="330882:330894" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="361261:361308" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="368145:368173" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="379008:379028" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="379030:379036" ph=" " />
+                <marker date="1480778446000" expanded="true" signature="383745:383799" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="384598:384610" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="384628:384644" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="399926:399948" ph="..." />
+                <marker date="1480778446000" expanded="true" signature="409454:409465" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zedityplus_LifeCycle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_LifeCycle.php">
+      <file leaf-file-name="zedity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedity/zedity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1757">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zedityplus_InstallIndicator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_InstallIndicator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="276">
+              <caret line="363" column="65" selection-start-line="363" selection-start-column="65" selection-end-line="363" selection-end-column="65" />
+              <folding>
+                <marker date="1480777623000" expanded="true" signature="13647:13654" ph="×" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,6 +124,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wp-content/plugins/zedityPlus/ZedityPlus_InstallIndicator.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/zedity/zedity.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/zedityplus/js/unminified.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
       </list>
     </option>
@@ -151,6 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,10 +240,82 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedityplus" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,6 +325,49 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -248,31 +380,32 @@
       <option name="presentableId" value="Default" />
       <updated>1480758322020</updated>
       <workItem from="1480758323276" duration="1055000" />
+      <workItem from="1480776666793" duration="1872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1055000" />
+    <option name="totallyTimeSpent" value="2927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -304,6 +437,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_OptionsManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -321,10 +478,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_LifeCycle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#897#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_InstallIndicator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#897#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_InstallIndicator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#897#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_LifeCycle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#897#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="10" column="3001" selection-start-line="10" selection-start-column="2996" selection-end-line="10" selection-end-column="3001" />
           <folding />
         </state>
       </provider>
@@ -337,26 +542,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_InstallIndicator.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/zedityplus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_LifeCycle.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_OptionsManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1757">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480760540000" expanded="true" signature="11700:11706" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="11706:11712" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="11712:11718" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="11731:11757" ph="..." />
+            <marker date="1480760540000" expanded="true" signature="12176:12182" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="12182:12188" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="12188:12194" ph=" " />
+            <marker date="1480760540000" expanded="true" signature="12207:12233" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedity/zedity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="363" column="65" selection-start-line="363" selection-start-column="65" selection-end-line="363" selection-end-column="65" />
+          <folding>
+            <marker date="1480777623000" expanded="true" signature="13647:13654" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/js/unminified.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1934" column="71" selection-start-line="1934" selection-start-column="71" selection-end-line="1934" selection-end-column="71" />
+          <folding>
+            <marker date="1480778446000" expanded="true" signature="51946:51968" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="52406:52428" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="102134:102140" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="147521:147532" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="156994:157021" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="160335:160362" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="227708:227768" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="227831:227837" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="227837:227843" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="227843:227849" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="228024:228102" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="228195:228201" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="228201:228207" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="228207:228213" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="229444:229461" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="229568:229580" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="247448:247470" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="249515:249536" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="251026:251059" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="253789:253810" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="254271:254299" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="254959:254980" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="255097:255112" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="255243:255259" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="255274:255289" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="268289:268301" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="277849:277989" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="278001:278078" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="279410:279550" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="279563:279657" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="279685:279762" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="279894:279915" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="282393:282533" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="282545:282629" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="298944:298995" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="299034:299066" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="315920:315937" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="326431:326501" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="326541:326547" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="330882:330894" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="361261:361308" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="368145:368173" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="379008:379028" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="379030:379036" ph=" " />
+            <marker date="1480778446000" expanded="true" signature="383745:383799" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="384598:384610" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="384628:384644" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="399926:399948" ph="..." />
+            <marker date="1480778446000" expanded="true" signature="409454:409465" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        <state relative-caret-position="370">
+          <caret line="102" column="171" selection-start-line="102" selection-start-column="171" selection-end-line="102" selection-end-column="171" />
           <folding />
         </state>
       </provider>

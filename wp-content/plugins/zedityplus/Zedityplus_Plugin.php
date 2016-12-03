@@ -80,17 +80,43 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     }
 
 	public function helloWorld(){
-		echo 'hello<br>';
+		//echo 'hello<br>';
 		?>
 			<script>
-				//alert('yo');
+				function changeUI() {
+					var checkExist = setInterval(function() {
+						if (jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)').length) {
+							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)')
+								.clone()
+								.appendTo(
+									jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel')
+								);
+
+							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zedity-ribbon-button-label')
+								.text('Article');
+							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zicon.zicon-image.zicon-size-m')
+								.removeClass('zicon-image')
+								.addClass('zicon-text');
+
+							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button')
+								.click(function(){
+									jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2) > button').click();
+								});
+
+
+							console.log("UI changed!");
+							clearInterval(checkExist);
+
+						}
+					}, 100); // check every 100ms
+				}
 			</script>
 		<?php
 	}
 
 	public function addActionsAndFilters() {
 
-		add_action('wp_head', array(&$this, 'helloWorld'));
+		add_action('admin_menu', array(&$this, 'helloWorld'));
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47

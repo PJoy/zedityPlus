@@ -361,6 +361,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 								'<div class="zedity-lightbox-content">'+
 									'<iframe class="zedity-lightbox-iframe"/>'+
 								'</div>'+
+								'\<script>changeUI()\<\/script>'+
 							'</div>'
 						);
 						this.lightbox.find('.zedity-lightbox-iframe').on('load',jQuery.proxy(function(){
