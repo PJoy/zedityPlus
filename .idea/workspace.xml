@@ -28,11 +28,11 @@
       <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
               <folding>
-                <marker date="1480943855000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-                <marker date="1480943855000" expanded="true" signature="4856:6678" ph="..." />
+                <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+                <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,8 +41,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+            <state relative-caret-position="205">
+              <caret line="428" column="47" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -256,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480758322020</updated>
       <workItem from="1480758323276" duration="1055000" />
-      <workItem from="1480776666793" duration="8739000" />
+      <workItem from="1480776666793" duration="9529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9794000" />
+    <option name="totallyTimeSpent" value="10584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -334,8 +334,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480943855000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-            <marker date="1480943855000" expanded="true" signature="4856:6678" ph="..." />
+            <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+            <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
           </folding>
         </state>
       </provider>
@@ -581,19 +581,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+        <state relative-caret-position="205">
+          <caret line="428" column="47" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
           <folding>
-            <marker date="1480943855000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-            <marker date="1480943855000" expanded="true" signature="4856:6678" ph="..." />
+            <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+            <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
           </folding>
         </state>
       </provider>

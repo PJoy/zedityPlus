@@ -195,7 +195,8 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 						},
 						function (response) {
 							// on success, post (preview) returned data in fancybox
-							var data = response.post.post_content;
+							//console.log(response)
+							var data = response.compiled;
 							jQuery.fancybox(data, {
 								// fancybox API options
 								fitToView: false,

@@ -422,12 +422,24 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
 function prefix_ajax_add_foobar() {
 	// Handle request then generate response using WP_Ajax_Response
+	$post = get_post($_POST['id']);
+	$content = $post->post_content;
+	$img = get_the_post_thumbnail($_POST['id'], 'full');
+
+	$msg = '<div>'.$content.'</div><div>'.$img.'</div>';
+
 	$return = array(
-		'post'	=> get_post($_POST['id'])
+		'post' => $post,
+		'content' => $content,
+		'image'	=> $img,
+		'compiled' => $msg
 	);
+
+
 
 	wp_send_json($return);
 	// Don't forget to stop execution afterward.
 	wp_die('hey');
+
 }
 
