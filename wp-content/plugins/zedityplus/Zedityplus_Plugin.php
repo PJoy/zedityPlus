@@ -154,8 +154,82 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 <?php
 	}
 
+	public function hello2(){
+		/*?>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
+		<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<?php*/
+		?>
+
+		<script>
+			var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+			/*var post = ''
+
+			window.setTimeout(function(){
+
+			jQuery.post(
+				ajaxurl,
+				{
+					'action': 'add_foobar',
+					'id':   2
+				},
+				function(response){
+					post = response.post.post_content;
+					console.log(post);
+					//jQuery('body').append(post)
+
+				}
+			);
+			},500);*/
+
+			jQuery(document).ready(function () {
+				jQuery('.preview2').on("click", function (e) {
+					e.preventDefault(); // avoids calling preview.php
+					jQuery.post(
+						ajaxurl,
+						{
+							'action': 'add_foobar',
+							'id': 2
+						},
+						function (response) {
+							// on success, post (preview) returned data in fancybox
+							var data = response.post.post_content;
+							jQuery.fancybox(data, {
+								// fancybox API options
+								fitToView: false,
+								width: 905,
+								height: 505,
+								autoSize: false,
+								closeClick: false,
+								openEffect: 'none',
+								closeEffect: 'none'
+							});
+						})
+				})
+			});
+
+
+		</script>
+		<a class="preview2" data-fancybox-type="ajax" href="<?php echo admin_url('admin-ajax.php'); ?>" id="preview2">Preview</a>
+
+
+		<a class="fancybox" href="<?php echo admin_url('admin-ajax.php'); ?>">oihoi<br>oioih</a>
+		<?php
+
+	}
+
+
+
+
 	public function addActionsAndFilters() {
 
+		add_action( 'wp_ajax_add_foobar', 'prefix_ajax_add_foobar' );
+
+
+
+		add_action('wp_footer', array(&$this, 'hello2'));
 		add_action('wp_footer', array(&$this, 'helloWorld'));
 
         // Add options administration page

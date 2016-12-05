@@ -419,3 +419,15 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+function prefix_ajax_add_foobar() {
+	// Handle request then generate response using WP_Ajax_Response
+	$return = array(
+		'post'	=> get_post($_POST['id'])
+	);
+
+	wp_send_json($return);
+	// Don't forget to stop execution afterward.
+	wp_die('hey');
+}
+
