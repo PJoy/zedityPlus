@@ -438,8 +438,8 @@ function prefix_ajax_add_foobar() {
 			}
 
 			.flip-container, .front, .back {
-				width: 320px;
-				height: 480px;
+				width: 640px;
+				height: 960px;
 			}
 
 			/* flip speed goes here */
@@ -473,7 +473,7 @@ function prefix_ajax_add_foobar() {
 
 		</style>
 
-		<div class="flip-container" ontouchstart="this.classList.toggle(\'hover\');">
+		<div class="flip-container" onclick="this.classList.toggle(\'hover\');">
 <div class="flipper">
 		<div class="front">'.$img.'</div>
 		<div class="back">'.$content.'</div>

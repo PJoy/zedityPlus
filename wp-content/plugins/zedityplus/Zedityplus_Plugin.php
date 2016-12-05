@@ -114,11 +114,12 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 				//alert('yo');
 
 				urls = [];
+				ids = [];
 			</script>
 		<?php
 		global $wpdb;
 
-		$sql="SELECT id FROM wpz_posts";
+		$sql="SELECT id FROM wpz_posts WHERE post_type = 'page'";
 
 		$posts = $wpdb->get_results($sql);
 
@@ -129,12 +130,15 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 			$id = $post->id;
 			$tb = get_post_thumbnail_id($id);
 			$url = wp_get_attachment_url($tb);
-			if (strlen($url) > 1) {
+			$status = get_post_status($id);
+			echo $status.'<br>';
+			if (strlen($url) > 1 && $status = 'published') {
 				//echo '<pre>'.$url.'</pre>';
 				array_push($urls,$url);
 				?>
 				<script>
-					urls.push('<?php echo $url ?>')
+					urls.push('<?php echo $url ?>');
+					ids['<?php echo $url ?>'] = <?php echo $post->id; ?>
 				</script>
 <?php
 			}
@@ -146,7 +150,8 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 				urls.forEach(function(f){
 					if (a.src == f){
 						//console.log(f);
-						jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
+						//jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
+						addArticleFancyBox(a, ids[f]);
 					}
 				});
 			})
@@ -155,71 +160,31 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 	}
 
 	public function hello2(){
-		/*?>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-		<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
-		<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-		<?php*/
 		?>
-
-
 		<script>
-			var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-			/*var post = ''
+			function addArticleFancyBox(elem, id) {
+				var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
 
-			window.setTimeout(function(){
-
-			jQuery.post(
-				ajaxurl,
-				{
-					'action': 'add_foobar',
-					'id':   2
-				},
-				function(response){
-					post = response.post.post_content;
-					console.log(post);
-					//jQuery('body').append(post)
-
-				}
-			);
-			},500);*/
-
-			jQuery(document).ready(function () {
-				jQuery('.preview2').on("click", function (e) {
-					e.preventDefault(); // avoids calling preview.php
-					jQuery.post(
-						ajaxurl,
-						{
-							'action': 'add_foobar',
-							'id': 2
-						},
-						function (response) {
-							// on success, post (preview) returned data in fancybox
-							//console.log(response)
-							var data = response.compiled;
-							jQuery.fancybox(data, {
-								// fancybox API options
-								fitToView: false,
-								width: 905,
-								height: 505,
-								autoSize: false,
-								closeClick: false,
-								openEffect: 'none',
-								closeEffect: 'none'
-							});
-						})
-				})
-			});
-
-
+				jQuery(document).ready(function () {
+					jQuery(elem).on("click", function (e) {
+						e.preventDefault(); // avoids calling preview.php
+						jQuery.post(
+							ajaxurl,
+							{
+								'action': 'add_foobar',
+								'id': id
+							},
+							function (response) {
+								var data = response.compiled;
+								jQuery.fancybox(data, {});
+							})
+					})
+				});
+				console.log('loaded post n°'+id+' in elem');
+				console.log(elem);
+			}
 		</script>
-		<a class="preview2" data-fancybox-type="ajax" href="<?php echo admin_url('admin-ajax.php'); ?>" id="preview2">Preview</a>
-
-
-		<a class="fancybox" href="<?php echo admin_url('admin-ajax.php'); ?>">oihoi<br>oioih</a>
 		<?php
-
 	}
 
 
@@ -233,6 +198,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 
 		add_action('wp_footer', array(&$this, 'hello2'));
 		add_action('wp_footer', array(&$this, 'helloWorld'));
+		//add_action('admin_menu', array(&$this, 'helloWorld'));
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
