@@ -163,6 +163,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 		<?php*/
 		?>
 
+
 		<script>
 			var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
 			/*var post = ''

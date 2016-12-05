@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391881c-811a-4703-8864-adbf9324aa83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" />
     </list>
@@ -25,25 +24,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
+            <state relative-caret-position="15">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
-                <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-                <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
+                <marker date="1480945569000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+                <marker date="1480945569000" expanded="true" signature="4856:6701" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="428" column="47" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="310">
+              <caret line="482" column="6" selection-start-line="482" selection-start-column="6" selection-end-line="482" selection-end-column="6" />
+              <folding>
+                <marker date="1480945676000" expanded="true" signature="14847:15667" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="14913:14944" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15047:15085" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15121:15164" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15208:15295" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15353:15442" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15493:15570" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15618:15656" ph="{...}" />
+                <marker date="1480945676000" expanded="true" signature="15748:15860" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="15770:15792" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="15770:15827" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="15770:15853" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="15792:15806" ph="..." />
+                <marker date="1480945676000" expanded="true" signature="15827:15845" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +83,8 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/zedityplus/js/unminified.js" />
         <option value="$PROJECT_DIR$/wp-admin/admin-ajax.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" />
       </list>
     </option>
   </component>
@@ -256,12 +270,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480758322020</updated>
       <workItem from="1480758323276" duration="1055000" />
-      <workItem from="1480776666793" duration="9529000" />
+      <workItem from="1480776666793" duration="10024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10584000" />
+    <option name="totallyTimeSpent" value="11079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -334,8 +348,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-            <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
+            <marker date="1480945569000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+            <marker date="1480945569000" expanded="true" signature="4856:6701" ph="..." />
           </folding>
         </state>
       </provider>
@@ -579,21 +593,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="428" column="47" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <marker date="1480945569000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
+            <marker date="1480945569000" expanded="true" signature="4856:6701" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
+        <state relative-caret-position="310">
+          <caret line="482" column="6" selection-start-line="482" selection-start-column="6" selection-end-line="482" selection-end-column="6" />
           <folding>
-            <marker date="1480944727000" expanded="true" signature="4198:4222" ph="SELECT id FR... wpz_posts" />
-            <marker date="1480944727000" expanded="true" signature="4856:6700" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="14847:15667" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="14913:14944" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15047:15085" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15121:15164" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15208:15295" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15353:15442" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15493:15570" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15618:15656" ph="{...}" />
+            <marker date="1480945676000" expanded="true" signature="15748:15860" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="15770:15792" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="15770:15827" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="15770:15853" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="15792:15806" ph="..." />
+            <marker date="1480945676000" expanded="true" signature="15827:15845" ph="..." />
           </folding>
         </state>
       </provider>
