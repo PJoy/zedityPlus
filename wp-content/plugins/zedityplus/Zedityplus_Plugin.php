@@ -80,58 +80,28 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     }
 
 	public function helloWorld(){
-		//echo 'hello<br>';
+		echo 'hello<br>';
 		?>
-			<script>
-				function changeUI() {
-					var checkExist = setInterval(function() {
-						if (jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)').length) {
-							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)')
-								.clone()
-								.appendTo(
-									jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel')
-								);
-
-							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zedity-ribbon-button-label')
-								.text('Article');
-							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zicon.zicon-image.zicon-size-m')
-								.removeClass('zicon-image')
-								.addClass('zicon-text');
-
-							jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button')
-								.click(function(){
-									jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2) > button').click();
-								});
-
-
-							console.log("UI changed!");
-							clearInterval(checkExist);
-
-						}
-					}, 100); // check every 100ms
-				}
-
-				//alert('yo');
-
-				urls = [];
-				ids = [];
-			</script>
+		<script>
+			urls = [];
+			ids = [];
+		</script>
 		<?php
 		global $wpdb;
 
-		$sql="SELECT id FROM wpz_posts WHERE post_type = 'page'";
+		$sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
 
 		$posts = $wpdb->get_results($sql);
 
 		$urls = [];
-
+//echo 'yo';
 		foreach ($posts as $post)
 		{
 			$id = $post->id;
 			$tb = get_post_thumbnail_id($id);
 			$url = wp_get_attachment_url($tb);
 			$status = get_post_status($id);
-			echo $status.'<br>';
+			//echo $status.'<br>';
 			if (strlen($url) > 1 && $status = 'published') {
 				//echo '<pre>'.$url.'</pre>';
 				array_push($urls,$url);
@@ -146,22 +116,17 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 ?>
 		<script>
 			jQuery('img').each(function(e,a){
-					//console.log(a.src);
+					console.log('img on page : ', a.src);
 				urls.forEach(function(f){
+					console.log('all img on posts : ', f);
 					if (a.src == f){
 						//console.log(f);
 						//jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
 						addArticleFancyBox(a, ids[f]);
 					}
 				});
-			})
-		</script>
-<?php
-	}
+			});
 
-	public function hello2(){
-		?>
-		<script>
 			function addArticleFancyBox(elem, id) {
 				var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
 
@@ -183,22 +148,57 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 				console.log('loaded post n°'+id+' in elem');
 				console.log(elem);
 			}
+
 		</script>
-		<?php
+<?php
 	}
 
 
+	public function adminPlus(){
+		?>
+		<script>
+			function changeUI() {
+				var checkExist = setInterval(function() {
+					if (jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)').length) {
+						jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2)')
+							.clone()
+							.appendTo(
+								jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel')
+							);
+
+						jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zedity-ribbon-button-label')
+							.text('Article');
+						jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button > span.zicon.zicon-image.zicon-size-m')
+							.removeClass('zicon-image')
+							.addClass('zicon-text');
+
+						jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(4) > button')
+							.click(function(){
+								jQuery('iframe').contents().find('[id$=boxes] > div:nth-child(1) > div.zedity-ribbon-group-panel > div:nth-child(2) > button').click();
+							});
+
+
+						console.log("UI changed!");
+						clearInterval(checkExist);
+
+					}
+				}, 100); // check every 100ms
+			}
+
+			//alert('yo');
+
+		</script>
+
+		<?php
+	}
 
 
 	public function addActionsAndFilters() {
 
 		add_action( 'wp_ajax_add_foobar', 'prefix_ajax_add_foobar' );
 
-
-
-		add_action('wp_footer', array(&$this, 'hello2'));
-		add_action('wp_footer', array(&$this, 'helloWorld'));
-		//add_action('admin_menu', array(&$this, 'helloWorld'));
+		add_action('wp_footer',array(&$this, 'helloWorld'));
+		add_action('admin_footer',array(&$this, 'adminPlus'));
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
