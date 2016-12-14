@@ -1,0 +1,116 @@
+/*----------------------------------------------------------------------------------------
+Reset some css modified by the WP visual editor
+*/
+
+.zedity-editor b,
+.zedity-editor strong,
+.zedity-editor i,
+.zedity-editor em {
+	font: inherit;
+	line-height: inherit;
+}
+
+.zedity-editor b,
+.zedity-editor strong {
+	font-weight: bold;
+}
+
+.zedity-editor i,
+.zedity-editor em {
+	font-style: italic;
+}
+
+
+.zedity-editor .zedity-box {
+	overflow: hidden;
+}
+
+.zedity-editor .zedity-box-Image p {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.zedity-editor .zedity-box img {
+	padding: 0;
+	border: none;
+	max-width: none;
+}
+
+.zedity-editor .zedity-box-Text p {
+	margin: 0;
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+Normalizations
+*/
+
+p {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+/*avoid clicks on links/popups*/
+/*a,*/
+[onclick] {
+	pointer-events: none;
+}
+
+
+/*--------------------------------------------------------------------------------------
+iframe
+*/
+
+
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	vertical-align: bottom;
+	overflow: hidden;
+	max-width: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.zedity-iframe-wrapper {
+	position: relative;
+	cursor: default;
+}
+.zedity-iframe-wrapper:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000;
+	/*background: rgba(0,200,0,.5);*/
+}
+
+/*TinyMCE placeholder*/
+.zedity-iframe-wrapper > img.mceItemIframe {
+	padding: 0 !important;
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+zedity content selection
+*/
+
+.zedity-iframe-wrapper::selection,
+.zedity-wrapper::selection,
+.zedity-editor::selection,
+.zedity-wrapper *::selection {
+	color: initial !important;
+	background-color: transparent !important;
+}
+.zedity-iframe-wrapper::-moz-selection,
+.zedity-wrapper::-moz-selection,
+.zedity-editor::-moz-selection,
+.zedity-wrapper *::-moz-selection {
+	color: initial !important;
+	background-color: transparent !important;
+}
