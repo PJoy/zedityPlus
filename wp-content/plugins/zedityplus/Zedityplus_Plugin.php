@@ -79,11 +79,62 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     public function upgrade() {
     }
 
-	public function helloWorld(){
+    public function get_post_id_from_featured_img_url($imgUrl){
+        global $wpdb;
+
+        $sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
+
+        $posts = $wpdb->get_results($sql);
+
+        foreach ($posts as $post)
+        {
+            $id = $post->id;
+            $tb = get_post_thumbnail_id($id);
+            $url = wp_get_attachment_url($tb);
+            $status = get_post_status($id);
+            if (strlen($url) > 1 && $status = 'published') {
+                if ($url == $imgUrl) return $id;
+            }
+        }
+    }
+
+
+    public function helloWorld(){
 	    ?>
 
         <script>
-            jQuery('.zedity-box-Article .zedity-content img').wrap('<a href="<?php echo admin_url( "admin-ajax.php" )."?action=add_foobar";?>" style="display: inline-block; width: 100%; height: 100%;" class="fancybox ajax" target="_top" data-target="_top" data-id="168">')
+            var imgs = []
+            <?php
+
+            global $wpdb;
+
+            $sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
+
+            $posts = $wpdb->get_results($sql);
+
+            foreach ($posts as $post)
+            {
+                $id = $post->id;
+                $tb = get_post_thumbnail_id($id);
+                $url = wp_get_attachment_url($tb);
+                $status = get_post_status($id);
+                if (strlen($url) > 1 && $status = 'published') {
+                    ?>
+            imgs['<?php echo $url ?>'] = <?php echo $id ?>;
+            <?php
+                }
+            }
+
+            ?>
+
+                postid = imgs[jQuery('.zedity-box-Article .zedity-content img').attr('src')];
+
+            jQuery('.zedity-box-Article .zedity-content img')
+                .wrap('<a href="<?php echo admin_url( "admin-ajax.php" )."?action=add_foobar";?>" style="display: inline-block; width: 100%; height: 100%;" class="fancybox ajax" target="_top" data-target="_top" data-id="'+ postid +'">')
+
+            window.setTimeout(function(){
+                jQuery('.zedity-content a').attr('rel', 'gal');
+            },100)
         </script>
 
         <style>
