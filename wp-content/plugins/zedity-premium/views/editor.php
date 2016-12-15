@@ -80,7 +80,7 @@
 						}
 							echo "All";
 							?>'],
-						img: '<?php echo $url; ?>r'
+						img: '<?php echo $url; ?>'
 					});
 				</script>
 				<?php

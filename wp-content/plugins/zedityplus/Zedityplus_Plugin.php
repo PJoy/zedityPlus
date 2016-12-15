@@ -226,6 +226,28 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 				}, 100); // check every 100ms
 			}
 
+			function setJQ(){
+                checkExists = setInterval(function() {
+                    if (jQuery('iframe').contents().find("#catsId").length) {
+                        jQuery("iframe").contents().find("#catsId").on("change", function(){
+                            var cat = jQuery('iframe').contents().find("#catsId option:selected").text().replace(/ /g,"");
+                            console.log(cat);
+                            jQuery("iframe").contents().find("#selectId option").show();
+                            jQuery("iframe").contents().find("#selectId option:not(."+cat+")").hide();
+                        });
+                        jQuery("iframe").contents().find("#selectId").on("change", function(){
+                            jQuery("iframe").contents().find("#zedity-txtImageLink").val(
+                                jQuery("iframe").contents().find("#selectId option:selected").val()
+                            );
+                        });
+
+                        console.log ('jquery ok');
+                        clearInterval(checkExists);
+
+                    }
+                }, 100); // check every 100ms
+            }
+
 			//alert('yo');
 
 		</script>
