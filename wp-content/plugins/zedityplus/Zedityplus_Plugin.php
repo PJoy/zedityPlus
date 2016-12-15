@@ -80,7 +80,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     }
 
 	public function helloWorld(){
-		echo 'hello<br>';
+		//echo 'hello<br>';
 		?>
 		<script>
 			urls = [];
@@ -155,6 +155,47 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 
 
 	public function adminPlus(){
+
+		/*global $wpdb;
+		$sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
+
+		$posts = $wpdb->get_results($sql);
+		?>
+		<script>
+			posts = [];
+		</script>
+		<?php
+		foreach ($posts as $post)
+		{
+			$id = $post->id;
+
+			$title = get_the_title($id);
+
+			$cats = wp_get_post_categories($id);
+
+			$tb = get_post_thumbnail_id($id);
+			$url = wp_get_attachment_url($tb);
+			$status = get_post_status($id);
+
+			if ( $title !== "Auto Draft" && $status = 'published') {
+				?>
+				<script>
+					posts.push({
+						id: '<?php echo $id; ?>',
+						title: '<?php echo $title; ?>',
+						cats: ['<?php foreach ($cats as $cat) {
+							echo get_the_category_by_ID($cat)."','";
+						}
+						echo "All";
+							?>'],
+						img: '<?php echo $url; ?>r'
+					});
+				</script>
+				<?php
+			}
+		}
+
+*/
 		?>
 		<script>
 			function changeUI() {
