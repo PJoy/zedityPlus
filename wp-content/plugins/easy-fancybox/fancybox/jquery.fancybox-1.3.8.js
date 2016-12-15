@@ -269,9 +269,12 @@
 
 					selectedOpts.ajax.win = selectedOpts.ajax.success;
 
+					postId = $(obj).attr("data-id");
+
 					ajaxLoader = $.ajax($.extend({}, selectedOpts.ajax, {
+						type: "POST",
 						url	: href,
-						data : selectedOpts.ajax.data || {},
+						data : {'id': postId},
 						error : function(XMLHttpRequest, textStatus, errorThrown) {
 							if ( XMLHttpRequest.status > 0 ) {
 								_error();
@@ -291,7 +294,7 @@
 									}
 								}
 
-								tmp.html( data );
+								tmp.html( data.compiled );
 								_process_inline();
 							}
 						}

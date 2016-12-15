@@ -420,13 +420,15 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
+
 function prefix_ajax_add_foobar() {
 	// Handle request then generate response using WP_Ajax_Response
 	$post = get_post($_POST['id']);
 	$content = $post->post_content;
-	$img = get_the_post_thumbnail($_POST['id'], 'full');
+	$img = get_the_post_thumbnail($_POST['id'], array(500));
 
-	$msg ='
+
+	$msg ='<script>console.log('.$_POST['id'].')</script>
 			<style>
 			/* entire container, keeps perspective */
 			.flip-container {
@@ -438,8 +440,8 @@ function prefix_ajax_add_foobar() {
 }
 
 			.flip-container, .front, .back {
-				width: 640px;
-				height: 960px;
+			    width: 500px;
+				height: 500px;
 			}
 
 			/* flip speed goes here */
@@ -518,7 +520,7 @@ function prefix_ajax_add_foobar() {
 
 	wp_send_json($return);
 	// Don't forget to stop execution afterward.
-	wp_die('hey');
+	wp_die('ok');
 
 }
 

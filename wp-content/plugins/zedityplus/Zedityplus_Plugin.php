@@ -115,6 +115,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 		}
 ?>
 		<script>
+            console.log("<?php echo admin_url( 'admin-ajax.php' ); ?>");
 			jQuery('img').each(function(e,a){
 					console.log('img on page : ', a.src);
 				urls.forEach(function(f){
@@ -122,7 +123,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 					if (a.src == f){
 						//console.log(f);
 						//jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
-						addArticleFancyBox(a, ids[f]);
+			//			addArticleFancyBox(a, ids[f]);
 					}
 				});
 			});
@@ -142,12 +143,17 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 							function (response) {
 								var data = response.compiled;
 								jQuery.fancybox(data, {
-									'transitionIn'	:	'fade',
-									'transitionOut'	:	'fade',
-									'speedIn'		:	600,
-									'speedOut'		:	200,
-									'overlayShow'	:	false
+									'transitionIn'	:	'elastic',
+									'transitionOut'	:	'elastic',
+									'overlayShow'	:	false,
+									'margin'		: 0,
+									'padding'		: 0
 								});
+                                /*jQuery('.front').css('width', '100px');
+                                jQuery('.back').css('width', '100px');
+                                jQuery('.flip-container').css('width', '100px');
+                                jQuery('#fancybox-outer').css('width', '100px');
+                                jQuery('#fancybox-content').css('width', '100px');*/
 							})
 					})
 				});
@@ -242,10 +248,10 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
                             jQuery("iframe").contents().find("#selectId option:not(."+cat+")").hide();
                         });
                         jQuery("iframe").contents().find("#selectId").on("change", function(){
-                            jQuery("iframe").contents().find("#zedity-txtImageLink").val(
+                            jQuery("iframe").contents().find("#zedity-txtarticleLink").val(
                                 jQuery("iframe").contents().find("#selectId option:selected").val()
                             );
-                            jQuery("iframe").contents().find("#zedity-txtImageDescription").val('DEFAULT')
+                            jQuery("iframe").contents().find("#zedity-txtArticleDescription").val('DEFAULT')
                         });
 
                         console.log ('jquery ok');
