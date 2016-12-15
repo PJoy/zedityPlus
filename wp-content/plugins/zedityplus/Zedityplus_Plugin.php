@@ -141,7 +141,13 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 							},
 							function (response) {
 								var data = response.compiled;
-								jQuery.fancybox(data, {});
+								jQuery.fancybox(data, {
+									'transitionIn'	:	'fade',
+									'transitionOut'	:	'fade',
+									'speedIn'		:	600,
+									'speedOut'		:	200,
+									'overlayShow'	:	false
+								});
 							})
 					})
 				});

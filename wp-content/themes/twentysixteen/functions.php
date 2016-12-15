@@ -433,9 +433,9 @@ function prefix_ajax_add_foobar() {
 				perspective: 1000px;
 			}
 			/* flip the pane when hovered */
-			.flip-container:hover .flipper, .flip-container.hover .flipper {
-				transform: rotateY(180deg);
-			}
+.flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
 
 			.flip-container, .front, .back {
 				width: 640px;
@@ -473,12 +473,37 @@ function prefix_ajax_add_foobar() {
 
 		</style>
 
-		<div class="flip-container" onclick="this.classList.toggle(\'hover\');">
-<div class="flipper">
-		<div class="front">'.$img.'</div>
-		<div class="back">'.$content.'</div>
-	</div>
-</div>';
+		<div class="flip-container">
+		    <div class="flipper">
+		        <div class="back">
+		        <a id="fancybox-switch" style="
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: transparent url(http://www.bidbuysold.com.au/bidbuysold/images/pageflip.png);
+    cursor: pointer;
+    z-index: 111107;
+"onclick="jQuery(\'.flip-container\').toggleClass(\'hover\')";></a>
+		        '.$content.'</div>
+		        <div class="front">
+		        <a id="fancybox-switch" style="
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: transparent url(http://www.bidbuysold.com.au/bidbuysold/images/pageflip.png);
+    cursor: pointer;
+    z-index: 111107;
+"onclick="jQuery(\'.flip-container\').toggleClass(\'hover\')";></a>
+		        '.$img.'</div>
+	        </div>
+	        <a id="fancybox-switch" style="display: inline;"></a>
+        </div>';
 
 	//$msg = '<div>'.$content.'</div><div>'.$img.'</div>';
 
