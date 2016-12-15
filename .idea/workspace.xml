@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391881c-811a-4703-8864-adbf9324aa83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.css" />
     </list>
     <ignored path="zedity++.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Zedityplus_Plugin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="596">
@@ -67,6 +67,86 @@
               <folding>
                 <marker date="1481838296000" expanded="true" signature="2780:2829" ph="SELECT id FR... wpz_posts" />
                 <marker date="1481838296000" expanded="true" signature="3379:3428" ph="SELECT id FR... wpz_posts" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zedity.min.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="20" column="48160" selection-start-line="20" selection-start-column="48160" selection-end-line="20" selection-end-column="48160" />
+              <folding>
+                <element signature="e#32816#34413#2" expanded="true" />
+                <element signature="e#34447#35736#2" expanded="true" />
+                <element signature="e#35767#36932#2" expanded="true" />
+                <element signature="e#36963#40072#2" expanded="true" />
+                <element signature="e#40107#41940#2" expanded="true" />
+                <element signature="e#41972#43953#2" expanded="true" />
+                <element signature="e#43984#50333#2" expanded="true" />
+                <element signature="e#50364#52305#2" expanded="true" />
+                <element signature="e#52339#53560#2" expanded="true" />
+                <element signature="e#53591#55680#2" expanded="true" />
+                <element signature="e#55712#56209#2" expanded="true" />
+                <element signature="e#56243#61240#2" expanded="true" />
+                <element signature="e#61272#64181#2" expanded="true" />
+                <element signature="e#64212#65605#2" expanded="true" />
+                <element signature="e#65637#66726#2" expanded="true" />
+                <element signature="e#66758#68843#2" expanded="true" />
+                <element signature="e#68878#70443#2" expanded="true" />
+                <element signature="e#70474#73407#2" expanded="true" />
+                <element signature="e#73438#74135#2" expanded="true" />
+                <element signature="e#74167#76724#2" expanded="true" />
+                <element signature="e#76759#80944#2" expanded="true" />
+                <element signature="e#80975#82812#2" expanded="true" />
+                <element signature="e#82844#84297#2" expanded="true" />
+                <element signature="e#84328#86001#2" expanded="true" />
+                <element signature="e#86036#88093#2" expanded="true" />
+                <element signature="e#88130#88891#2" expanded="true" />
+                <element signature="e#88922#89503#2" expanded="true" />
+                <element signature="e#89534#90107#2" expanded="true" />
+                <element signature="e#90138#90851#2" expanded="true" />
+                <element signature="e#90884#91557#2" expanded="true" />
+                <element signature="e#91590#92339#2" expanded="true" />
+                <element signature="e#92372#93489#2" expanded="true" />
+                <element signature="e#93523#94192#2" expanded="true" />
+                <element signature="e#94224#94893#2" expanded="true" />
+                <element signature="e#94931#96524#2" expanded="true" />
+                <element signature="e#96560#97333#2" expanded="true" />
+                <element signature="e#97366#100031#2" expanded="true" />
+                <element signature="e#100062#100811#2" expanded="true" />
+                <element signature="e#100844#101521#2" expanded="true" />
+                <element signature="e#101555#102184#2" expanded="true" />
+                <element signature="e#102215#103140#2" expanded="true" />
+                <element signature="e#103172#104073#2" expanded="true" />
+                <element signature="e#104104#105505#2" expanded="true" />
+                <element signature="e#105534#106371#2" expanded="true" />
+                <element signature="e#106404#110589#2" expanded="true" />
+                <element signature="e#110630#111363#2" expanded="true" />
+                <element signature="e#111406#112143#2" expanded="true" />
+                <element signature="e#112185#112918#2" expanded="true" />
+                <element signature="e#112962#113695#2" expanded="true" />
+                <element signature="e#113733#116198#2" expanded="true" />
+                <element signature="e#116238#117323#2" expanded="true" />
+                <element signature="e#117356#118601#2" expanded="true" />
+                <element signature="e#118635#119884#2" expanded="true" />
+                <element signature="e#119924#120593#2" expanded="true" />
+                <element signature="e#120632#121269#2" expanded="true" />
+                <element signature="e#121311#121844#2" expanded="true" />
+                <element signature="e#121887#122420#2" expanded="true" />
+                <element signature="e#122456#123289#2" expanded="true" />
+                <element signature="e#123328#124521#2" expanded="true" />
+                <element signature="e#124560#125429#2" expanded="true" />
+                <element signature="e#125464#127801#2" expanded="true" />
+                <element signature="e#127834#130523#2" expanded="true" />
+                <element signature="e#130556#131457#2" expanded="true" />
+                <element signature="e#131488#131829#2" expanded="true" />
+                <element signature="e#131865#132426#2" expanded="true" />
+                <element signature="e#132459#132856#2" expanded="true" />
+                <element signature="e#132888#133389#2" expanded="true" />
+                <element signature="e#133423#133952#2" expanded="true" />
+                <element signature="e#133983#134532#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,6 +225,7 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/zedityplus/Zedityplus_Plugin.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.css" />
       </list>
     </option>
   </component>
@@ -344,6 +425,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zedity++" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="easy-fancybox" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -461,12 +590,12 @@
       <workItem from="1481812664188" duration="2832000" />
       <workItem from="1481816577645" duration="2377000" />
       <workItem from="1481819431837" duration="9806000" />
-      <workItem from="1481836192933" duration="1309000" />
+      <workItem from="1481836192933" duration="1685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40194000" />
+    <option name="totallyTimeSpent" value="40570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -476,6 +605,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -486,7 +616,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -512,14 +641,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="274" column="37" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6600">
@@ -660,6 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93930">
           <caret line="6262" column="3664" selection-start-line="6262" selection-start-column="3664" selection-end-line="6262" selection-end-column="3664" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,6 +1075,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="22" column="7084" selection-start-line="22" selection-start-column="7084" selection-end-line="22" selection-end-column="7084" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,6 +1083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
           <caret line="6262" column="3664" selection-start-line="6262" selection-start-column="3664" selection-end-line="6262" selection-end-column="3664" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,6 +1181,84 @@
           <folding>
             <marker date="1481838296000" expanded="true" signature="2780:2829" ph="SELECT id FR... wpz_posts" />
             <marker date="1481838296000" expanded="true" signature="3379:3428" ph="SELECT id FR... wpz_posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/zedity/zedity/zedity.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="20" column="48160" selection-start-line="20" selection-start-column="48160" selection-end-line="20" selection-end-column="48160" />
+          <folding>
+            <element signature="e#32816#34413#2" expanded="true" />
+            <element signature="e#34447#35736#2" expanded="true" />
+            <element signature="e#35767#36932#2" expanded="true" />
+            <element signature="e#36963#40072#2" expanded="true" />
+            <element signature="e#40107#41940#2" expanded="true" />
+            <element signature="e#41972#43953#2" expanded="true" />
+            <element signature="e#43984#50333#2" expanded="true" />
+            <element signature="e#50364#52305#2" expanded="true" />
+            <element signature="e#52339#53560#2" expanded="true" />
+            <element signature="e#53591#55680#2" expanded="true" />
+            <element signature="e#55712#56209#2" expanded="true" />
+            <element signature="e#56243#61240#2" expanded="true" />
+            <element signature="e#61272#64181#2" expanded="true" />
+            <element signature="e#64212#65605#2" expanded="true" />
+            <element signature="e#65637#66726#2" expanded="true" />
+            <element signature="e#66758#68843#2" expanded="true" />
+            <element signature="e#68878#70443#2" expanded="true" />
+            <element signature="e#70474#73407#2" expanded="true" />
+            <element signature="e#73438#74135#2" expanded="true" />
+            <element signature="e#74167#76724#2" expanded="true" />
+            <element signature="e#76759#80944#2" expanded="true" />
+            <element signature="e#80975#82812#2" expanded="true" />
+            <element signature="e#82844#84297#2" expanded="true" />
+            <element signature="e#84328#86001#2" expanded="true" />
+            <element signature="e#86036#88093#2" expanded="true" />
+            <element signature="e#88130#88891#2" expanded="true" />
+            <element signature="e#88922#89503#2" expanded="true" />
+            <element signature="e#89534#90107#2" expanded="true" />
+            <element signature="e#90138#90851#2" expanded="true" />
+            <element signature="e#90884#91557#2" expanded="true" />
+            <element signature="e#91590#92339#2" expanded="true" />
+            <element signature="e#92372#93489#2" expanded="true" />
+            <element signature="e#93523#94192#2" expanded="true" />
+            <element signature="e#94224#94893#2" expanded="true" />
+            <element signature="e#94931#96524#2" expanded="true" />
+            <element signature="e#96560#97333#2" expanded="true" />
+            <element signature="e#97366#100031#2" expanded="true" />
+            <element signature="e#100062#100811#2" expanded="true" />
+            <element signature="e#100844#101521#2" expanded="true" />
+            <element signature="e#101555#102184#2" expanded="true" />
+            <element signature="e#102215#103140#2" expanded="true" />
+            <element signature="e#103172#104073#2" expanded="true" />
+            <element signature="e#104104#105505#2" expanded="true" />
+            <element signature="e#105534#106371#2" expanded="true" />
+            <element signature="e#106404#110589#2" expanded="true" />
+            <element signature="e#110630#111363#2" expanded="true" />
+            <element signature="e#111406#112143#2" expanded="true" />
+            <element signature="e#112185#112918#2" expanded="true" />
+            <element signature="e#112962#113695#2" expanded="true" />
+            <element signature="e#113733#116198#2" expanded="true" />
+            <element signature="e#116238#117323#2" expanded="true" />
+            <element signature="e#117356#118601#2" expanded="true" />
+            <element signature="e#118635#119884#2" expanded="true" />
+            <element signature="e#119924#120593#2" expanded="true" />
+            <element signature="e#120632#121269#2" expanded="true" />
+            <element signature="e#121311#121844#2" expanded="true" />
+            <element signature="e#121887#122420#2" expanded="true" />
+            <element signature="e#122456#123289#2" expanded="true" />
+            <element signature="e#123328#124521#2" expanded="true" />
+            <element signature="e#124560#125429#2" expanded="true" />
+            <element signature="e#125464#127801#2" expanded="true" />
+            <element signature="e#127834#130523#2" expanded="true" />
+            <element signature="e#130556#131457#2" expanded="true" />
+            <element signature="e#131488#131829#2" expanded="true" />
+            <element signature="e#131865#132426#2" expanded="true" />
+            <element signature="e#132459#132856#2" expanded="true" />
+            <element signature="e#132888#133389#2" expanded="true" />
+            <element signature="e#133423#133952#2" expanded="true" />
+            <element signature="e#133983#134532#2" expanded="true" />
           </folding>
         </state>
       </provider>
