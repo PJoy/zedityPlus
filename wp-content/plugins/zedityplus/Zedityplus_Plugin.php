@@ -148,6 +148,12 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
             #fancybox-wrap{
                 width: inherit!important;
             }
+
+            #fancybox-right,
+            #fancybox-left {
+                height: 80%;
+            }
+
         </style>
 
         <?php
