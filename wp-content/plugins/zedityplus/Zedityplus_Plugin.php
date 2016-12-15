@@ -239,6 +239,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
                             jQuery("iframe").contents().find("#zedity-txtImageLink").val(
                                 jQuery("iframe").contents().find("#selectId option:selected").val()
                             );
+                            jQuery("iframe").contents().find("#zedity-txtImageDescription").val('DEFAULT')
                         });
 
                         console.log ('jquery ok');

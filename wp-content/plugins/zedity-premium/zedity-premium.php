@@ -363,7 +363,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 								'<div class="zedity-lightbox-content">'+
 									'<iframe class="zedity-lightbox-iframe"/>'+
 								'</div>'+
-							'\<script>changeUI()\<\/script>'+
 							'\<script>setJQ()\<\/script>'+
 
 							'</div>'
