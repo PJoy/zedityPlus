@@ -455,10 +455,14 @@ function prefix_ajax_add_foobar() {
 			/* hide back of pane during swap */
 			.front, .back {
 				backface-visibility: hidden;
-
+				overflow: hidden;
 				position: absolute;
 				top: 0;
 				left: 0;
+			}
+			
+			.hover .back {
+			    overflow: visible;
 			}
 
 			/* front pane, placed above back */

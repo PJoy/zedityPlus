@@ -80,89 +80,26 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
     }
 
 	public function helloWorld(){
-		//echo 'hello<br>';
-		?>
-		<script>
-			urls = [];
-			ids = [];
-		</script>
-		<?php
-		global $wpdb;
+	    ?>
 
-		$sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
+        <script>
+            jQuery('.zedity-box-Article .zedity-content img').wrap('<a href="<?php echo admin_url( "admin-ajax.php" )."?action=add_foobar";?>" style="display: inline-block; width: 100%; height: 100%;" class="fancybox ajax" target="_top" data-target="_top" data-id="168">')
+        </script>
 
-		$posts = $wpdb->get_results($sql);
+        <style>
+            /*#fancybox-title-over{
+                display: none;
+            }*/
+            #fancybox-content{
+                border-width: 0!important;
+            }
 
-		$urls = [];
-//echo 'yo';
-		foreach ($posts as $post)
-		{
-			$id = $post->id;
-			$tb = get_post_thumbnail_id($id);
-			$url = wp_get_attachment_url($tb);
-			$status = get_post_status($id);
-			//echo $status.'<br>';
-			if (strlen($url) > 1 && $status = 'published') {
-				//echo '<pre>'.$url.'</pre>';
-				array_push($urls,$url);
-				?>
-				<script>
-					urls.push('<?php echo $url ?>');
-					ids['<?php echo $url ?>'] = <?php echo $post->id; ?>
-				</script>
-<?php
-			}
-		}
-?>
-		<script>
-            console.log("<?php echo admin_url( 'admin-ajax.php' ); ?>");
-			jQuery('img').each(function(e,a){
-					console.log('img on page : ', a.src);
-				urls.forEach(function(f){
-					console.log('all img on posts : ', f);
-					if (a.src == f){
-						//console.log(f);
-						//jQuery(a).wrap("<a rel='essai' class='fancybox' href='"+a.src+"'></a>");
-			//			addArticleFancyBox(a, ids[f]);
-					}
-				});
-			});
+            #fancybox-wrap{
+                width: inherit!important;
+            }
+        </style>
 
-			function addArticleFancyBox(elem, id) {
-				var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
-
-				jQuery(document).ready(function () {
-					jQuery(elem).on("click", function (e) {
-						e.preventDefault(); // avoids calling preview.php
-						jQuery.post(
-							ajaxurl,
-							{
-								'action': 'add_foobar',
-								'id': id
-							},
-							function (response) {
-								var data = response.compiled;
-								jQuery.fancybox(data, {
-									'transitionIn'	:	'elastic',
-									'transitionOut'	:	'elastic',
-									'overlayShow'	:	false,
-									'margin'		: 0,
-									'padding'		: 0
-								});
-                                /*jQuery('.front').css('width', '100px');
-                                jQuery('.back').css('width', '100px');
-                                jQuery('.flip-container').css('width', '100px');
-                                jQuery('#fancybox-outer').css('width', '100px');
-                                jQuery('#fancybox-content').css('width', '100px');*/
-							})
-					})
-				});
-				console.log('loaded post n°'+id+' in elem');
-				console.log(elem);
-			}
-
-		</script>
-<?php
+        <?php
 	}
 
 
