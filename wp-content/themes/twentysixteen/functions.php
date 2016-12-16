@@ -439,7 +439,7 @@ function prefix_ajax_add_foobar() {
  #fancybox-wrap.flip #fancybox-outer,
  #fancybox-wrap.hover .flipper,
  #fancybox-wrap.flip .flipper {
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
 }
 
 			.flip-container, .front, .back {
@@ -505,6 +505,11 @@ function prefix_ajax_add_foobar() {
 			}
 			
 			#fancybox-wrap:not(.hover) .back #fancybox-switch {
+			    display: none!important;
+			}
+			
+			.hover #fancybox-left,
+			.hover #fancybox-right {
 			    display: none!important;
 			}
 
