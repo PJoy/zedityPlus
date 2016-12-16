@@ -428,7 +428,9 @@ function prefix_ajax_add_foobar() {
 	$img = get_the_post_thumbnail($_POST['id'], array(500));
 
 
-	$msg ='<script>console.log('.$_POST['id'].')</script>
+	$msg ='<script>console.log('.$_POST['id'].')
+	            jQuery(\'#fancybox-close\').click(function(){jQuery(\'*\').removeClass(\'hover\')});
+</script>
 			<style>
 			/* entire container, keeps perspective */
 			#fancybox-wrap {

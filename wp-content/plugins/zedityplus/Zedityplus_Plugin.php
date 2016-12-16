@@ -126,7 +126,6 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
             }
 
             ?>
-
                 postid = imgs[jQuery('.zedity-box-Article .zedity-content img').attr('src')];
 
             jQuery('.zedity-box-Article .zedity-content img')
