@@ -499,6 +499,14 @@ function prefix_ajax_add_foobar() {
 
 				/*transform: rotateY(180deg);*/
 			}
+			
+			.hover .front #fancybox-switch {
+			    display: none!important;
+			}
+			
+			#fancybox-wrap:not(.hover) .back #fancybox-switch {
+			    display: none!important;
+			}
 
 		</style>
 
