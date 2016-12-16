@@ -431,11 +431,14 @@ function prefix_ajax_add_foobar() {
 	$msg ='<script>console.log('.$_POST['id'].')</script>
 			<style>
 			/* entire container, keeps perspective */
-			.flip-container {
+			#fancybox-wrap {
 				perspective: 1000px;
 			}
 			/* flip the pane when hovered */
-.flip-container.hover .flipper, .flip-container.flip .flipper {
+#fancybox-wrap.hover #fancybox-outer,
+ #fancybox-wrap.flip #fancybox-outer,
+ #fancybox-wrap.hover .flipper,
+ #fancybox-wrap.flip .flipper {
 	transform: rotateY(180deg);
 }
 
@@ -445,8 +448,17 @@ function prefix_ajax_add_foobar() {
 			}
 
 			/* flip speed goes here */
-			.flipper {
+			#fancybox-outer {
 				transition: 0.6s;
+				/*transform-style: preserve-3d;*/
+
+				position: relative;
+			}
+
+			 .flipper {
+				/*transition: 0.6s;*/
+				transition-delay: 0.2s;
+
 				transform-style: preserve-3d;
 
 				position: relative;
@@ -455,14 +467,18 @@ function prefix_ajax_add_foobar() {
 			/* hide back of pane during swap */
 			.front, .back {
 				backface-visibility: hidden;
-				overflow: hidden;
+				/*overflow: hidden;*/
 				position: absolute;
 				top: 0;
 				left: 0;
 			}
 			
+			.hover .front{
+			    /*display: none;*/
+			}
+			
 			.hover .back {
-			    overflow: visible;
+			    /*overflow: visible;*/
 			}
 
 			/* front pane, placed above back */
@@ -474,7 +490,10 @@ function prefix_ajax_add_foobar() {
 
 			/* back, initially hidden pane */
 			.back {
-				transform: rotateY(180deg);
+			backface-visibility: visible;
+			    overflow-x: hidden; 
+
+				/*transform: rotateY(180deg);*/
 			}
 
 		</style>
@@ -492,7 +511,7 @@ function prefix_ajax_add_foobar() {
     background: transparent url(http://www.bidbuysold.com.au/bidbuysold/images/pageflip.png);
     cursor: pointer;
     z-index: 111107;
-"onclick="jQuery(\'.flip-container\').toggleClass(\'hover\')";></a>
+"onclick="jQuery(\'#fancybox-wrap\').toggleClass(\'hover\')";></a>
 		        '.$content.'</div>
 		        <div class="front">
 		        <a id="fancybox-switch" style="
@@ -505,7 +524,7 @@ function prefix_ajax_add_foobar() {
     background: transparent url(http://www.bidbuysold.com.au/bidbuysold/images/pageflip.png);
     cursor: pointer;
     z-index: 111107;
-"onclick="jQuery(\'.flip-container\').toggleClass(\'hover\')";></a>
+"onclick="jQuery(\'#fancybox-wrap\').toggleClass(\'hover\')";></a>
 		        '.$img.'</div>
 	        </div>
 	        <a id="fancybox-switch" style="display: inline;"></a>
