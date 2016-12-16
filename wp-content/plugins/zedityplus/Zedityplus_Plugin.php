@@ -266,6 +266,7 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 	public function addActionsAndFilters() {
 
 		add_action( 'wp_ajax_add_foobar', 'prefix_ajax_add_foobar' );
+		add_action( 'wp_ajax_nopriv_add_foobar', 'prefix_ajax_add_foobar' );
 
 		add_action('wp_footer',array(&$this, 'helloWorld'));
 		add_action('admin_footer',array(&$this, 'adminPlus'));

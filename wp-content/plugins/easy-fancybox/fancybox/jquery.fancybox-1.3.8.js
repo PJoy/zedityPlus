@@ -281,6 +281,7 @@
 							}
 						},
 						success : function(data, textStatus, XMLHttpRequest) {
+							console.log(data, textStatus, XMLHttpRequest);
 							var o = typeof XMLHttpRequest == 'object' ? XMLHttpRequest : ajaxLoader;
 							if (o.status == 200) {
 								if ( typeof selectedOpts.ajax.win == 'function' ) {

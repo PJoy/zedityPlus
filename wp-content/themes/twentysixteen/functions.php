@@ -443,8 +443,8 @@ function prefix_ajax_add_foobar() {
 }
 
 			.flip-container, .front, .back {
-			    width: 500px;
-				height: 500px;
+			    width: 460px;
+				height: 460px;
 			}
 
 			/* flip speed goes here */
@@ -467,6 +467,8 @@ function prefix_ajax_add_foobar() {
 			/* hide back of pane during swap */
 			.front, .back {
 				backface-visibility: hidden;
+				    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+
 				/*overflow: hidden;*/
 				position: absolute;
 				top: 0;
@@ -491,6 +493,8 @@ function prefix_ajax_add_foobar() {
 			/* back, initially hidden pane */
 			.back {
 			backface-visibility: visible;
+			    -webkit-backface-visibility: visible; /* Chrome, Safari, Opera */
+
 			    overflow-x: hidden; 
 
 				/*transform: rotateY(180deg);*/
@@ -544,6 +548,7 @@ function prefix_ajax_add_foobar() {
 	wp_send_json($return);
 	// Don't forget to stop execution afterward.
 	wp_die('ok');
+    die();
 
 }
 
