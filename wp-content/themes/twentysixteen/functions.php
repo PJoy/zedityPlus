@@ -429,7 +429,6 @@ function prefix_ajax_add_foobar() {
 
 
 	$msg ='<script>console.log('.$_POST['id'].')
-	            jQuery(\'#fancybox-close\').click(function(){jQuery(\'*\').removeClass(\'hover\')});
 </script>
 			<style>
 			/* entire container, keeps perspective */

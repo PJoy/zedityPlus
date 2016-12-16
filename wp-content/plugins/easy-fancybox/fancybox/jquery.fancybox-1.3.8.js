@@ -973,6 +973,8 @@
 
 	// Note: within an iframe use - parent.$.fancybox.close();
 	$.fancybox.close = function() {
+		jQuery('*').removeClass('hover');
+
 		if (busy || wrap.is(':hidden')) {
 			return;
 		}
