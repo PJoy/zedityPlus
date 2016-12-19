@@ -261,6 +261,16 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
 		<?php
 	}
 
+	public function overrideDefaultFancybox($i){
+        wp_deregister_script('fancybox');
+        wp_deregister_script('jquery.fancybox');
+        wp_deregister_script('jquery_fancybox');
+        wp_deregister_script('jquery-fancybox');
+
+        wp_register_script('jquery-fancybox', '/wp-content/plugins/zedityplus/js/jquery.fancybox-1.3.8.js', array('jquery'));
+
+    }
+
 
 	public function addActionsAndFilters() {
 
@@ -273,6 +283,14 @@ class Zedityplus_Plugin extends Zedityplus_LifeCycle {
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
         add_action('admin_menu', array(&$this, 'addSettingsSubMenuPage'));
+
+
+
+        //NEW STUFF
+        add_action('wp_footer', array(&$this, 'overrideDefaultFancybox'));
+        //add_action('wp_footer', $this->overrideDefaultFancybox('second'));
+
+
 
         // Example adding a script & style just for the options administration page
         // http://plugin.michael-simpson.com/?page_id=47
