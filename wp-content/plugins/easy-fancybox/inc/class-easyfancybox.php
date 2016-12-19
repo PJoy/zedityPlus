@@ -297,12 +297,6 @@ var easy_fancybox_auto = function(){';
 
 	public static function register_scripts() {
 
-	    echo 'KO<br>';
-	    echo 'KO<br>';
-	    echo 'KO<br>';
-	    echo 'KO<br>';
-	    echo 'KO<br>';
-        echo self::$plugin_url.'fancybox/jquery.fancybox-'.FANCYBOX_VERSION.'.js';
 	    if ( is_admin() ) return;
 
 		// ENQUEUE

@@ -85,6 +85,9 @@
 				</script>
 				<?php
 			}
+			?>
+		<?php
+
 		}?>
 
 		<script src="<?php echo plugins_url("zedity/zedity.min.js?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/javascript"></script>
