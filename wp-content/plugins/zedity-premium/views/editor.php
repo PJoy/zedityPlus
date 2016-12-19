@@ -48,10 +48,12 @@
 		
 		<link rel="stylesheet" href="<?php echo plugins_url("zedity/zedity.min.css?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/css" media="screen" />
 <?php
-		global $wpdb;
-		$sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
 
-		$posts = $wpdb->get_results($sql);
+
+$posts = get_posts(array(
+	'posts_per_page'=> -1,
+));
+
 		?>
 		<script>
 			posts = [];
@@ -59,7 +61,7 @@
 		<?php
 		foreach ($posts as $post)
 		{
-			$id = $post->id;
+			$id = $post->ID;
 
 			$title = get_the_title($id);
 
@@ -72,7 +74,9 @@
 			if (/*strlen($url) > 1*/ $title !== "Auto Draft" && $status = 'published') {
 				?>
 				<script>
-					posts.push({
+                    console.log('<?php echo $id ?>');
+
+                    posts.push({
 						id: '<?php echo $id; ?>',
 						title: '<?php echo $title; ?>',
 						cats: ['<?php foreach ($cats as $cat) {
