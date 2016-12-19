@@ -66,7 +66,8 @@ if (class_exists('WP_Zedity_Plugin')) {
             //new actions
             add_action( 'wp_ajax_add_foobar',array(&$this, 'prefix_ajax_add_foobar' ));
             add_action( 'wp_ajax_nopriv_add_foobar', array(&$this,'prefix_ajax_add_foobar' ));
-            add_action('wp_footer',array(&$this, 'helloWorld'));
+
+            add_action('wp_footer',array(&$this, 'frontPlus'));
             add_action('admin_footer',array(&$this, 'adminPlus'));
             add_action('wp_footer', array(&$this, 'overrideDefaultFancybox'));
 
@@ -777,17 +778,17 @@ if (class_exists('WP_Zedity_Plugin')) {
         //----------------------------------------------------------------------------------------------
         //Zedity++
 
-
-        public function helloWorld(){
+        public function frontPlus(){
             ?>
 
             <script>
-                var imgs = []
+                var imgs = [];
+
                 <?php
 
                 global $wpdb;
 
-                $sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
+                $sql="SELECT id FROM wp_posts WHERE post_type = 'post'";
 
                 $posts = $wpdb->get_results($sql);
 
@@ -816,9 +817,6 @@ if (class_exists('WP_Zedity_Plugin')) {
             </script>
 
             <style>
-                /*#fancybox-title-over{
-                    display: none;
-                }*/
                 #fancybox-content{
                     border-width: 0!important;
                 }
@@ -836,7 +834,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 
             <?php
         }
-
 
         function adminPlus(){
             ?>
@@ -899,7 +896,7 @@ if (class_exists('WP_Zedity_Plugin')) {
             <?php
         }
 
-        function overrideDefaultFancybox($i){
+        function overrideDefaultFancybox(){
             wp_deregister_script('fancybox');
             wp_deregister_script('jquery.fancybox');
             wp_deregister_script('jquery_fancybox');
@@ -1054,7 +1051,6 @@ if (class_exists('WP_Zedity_Plugin')) {
             die();
 
         }
-
 
     }
 
