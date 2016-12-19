@@ -29,6 +29,7 @@
  *
  * Added SVG support by Simon Maillard simon@ogesta.fr
  */
+
 ;(function($) {
 	var tmp, loading, overlay, wrap, outer, content, close, title, nav_left, nav_right,
 
@@ -78,6 +79,8 @@
 		},
 
 		_start = function() {
+			console.log('aaffffaaaffazeaaezazffaa');
+
 			var obj = selectedArray[ selectedIndex ],
 				href,
 				type,
@@ -126,6 +129,8 @@
 				type = 'html';
 
 			} else if (href) {
+				
+
 				if (href.match(imgRegExp) || $(obj).hasClass("image")) {
 					type = 'image';
 
@@ -185,8 +190,10 @@
 			$('.fancybox-inline-tmp').off('fancybox-cancel').on('fancybox-change', function() {
 				$(this).replaceWith(content.children());
 			});
+			console.log('aaffffaaaaa');
 
 			switch (type) {
+
 				case 'html' :
 					tmp.html( selectedOpts.content );
 					_process_inline();
@@ -264,6 +271,7 @@
 
 				case 'ajax':
 					busy = false;
+  console.log('aaaaaaa');
 
 					$.fancybox.showActivity();
 
@@ -1200,3 +1208,4 @@
 	});
 
 })(jQuery);
+console.log('aaffffaaaffafezfzezeezdfezfzefezfezfzefzezeaaezazffaa');

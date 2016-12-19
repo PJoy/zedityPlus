@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Zedity Premium
+Plugin Name: Zedity++
 Plugin URI: https://zedity.com/plugin/wp
-Description: The easiest way to create your posts and pages, very quickly and with unprecedented possibilities!
+Description: Extension de Zedity-premium par Pierre PORTEJOIE
 Version: 7.1.3
-Author: Pridea Company
-Author URI: https://zedity.com
+Author: PJoy
+Author URI: https://pjoy.fr
 License: Zedity Premium
 License URI: https://zedity.com/license/premiumwp
 Text Domain: zedity
@@ -782,18 +782,17 @@ if (class_exists('WP_Zedity_Plugin')) {
             ?>
 
             <script>
-                var imgs = []
+                var imgs = [];
                 <?php
 
-                global $wpdb;
+                $posts = get_posts(array(
+                    'posts_per_page'=> -1,
+                ));
 
-                $sql="SELECT id FROM wpz_posts WHERE post_type = 'post'";
-
-                $posts = $wpdb->get_results($sql);
 
                 foreach ($posts as $post)
                 {
-                $id = $post->id;
+                $id = $post->ID;
                 $tb = get_post_thumbnail_id($id);
                 $url = wp_get_attachment_url($tb);
                 $status = get_post_status($id);
@@ -808,7 +807,7 @@ if (class_exists('WP_Zedity_Plugin')) {
                 postid = imgs[jQuery('.zedity-box-Article .zedity-content img').attr('src')];
 
                 jQuery('.zedity-box-Article .zedity-content img')
-                    .wrap('<a href="<?php echo admin_url( "admin-ajax.php" )."?action=add_foobar";?>" style="display: inline-block; width: 100%; height: 100%;" class="fancybox ajax" target="_top" data-target="_top" data-id="'+ postid +'">')
+                    .wrap('<a href="<?php echo admin_url( "admin-ajax.php" )."?action=add_foobar";?>" style="display: inline-block; width: 100%; height: 100%;" class="fancybox ajax" target="_top" data-target="_top" data-id="'+ postid +'">');
 
                 window.setTimeout(function(){
                     jQuery('.zedity-content a').attr('rel', 'gal');
@@ -912,8 +911,7 @@ if (class_exists('WP_Zedity_Plugin')) {
             wp_deregister_script('jquery_fancybox');
             wp_deregister_script('jquery-fancybox');
 
-            wp_register_script('jquery-fancybox', '/wp-content/plugins/zedity-premium/js/jquery.fancybox-1.3.8.js', array('jquery'));
-
+            wp_register_script('jquery-fancybox', plugin_dir_url(__FILE__).'js/jquery.fancybox-1.3.8.js', array('jquery'));
         }
 
         function prefix_ajax_add_foobar() {
