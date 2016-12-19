@@ -872,6 +872,13 @@ if (class_exists('WP_Zedity_Plugin')) {
                 function setJQ(){
                     checkExists = setInterval(function() {
                         if (jQuery('iframe').contents().find("#catsId").length) {
+/*                            jQuery("iframe").contents().find("#zedity-txtarticleLink").val(
+                                jQuery("iframe").contents().find("#selectId option:selected").val()
+                            );
+                            jQuery("iframe").contents().find("#zedity-txtArticleDescription").val('DEFAULT')
+*/
+
+
                             jQuery("iframe").contents().find("#catsId").on("change", function(){
                                 var cat = jQuery('iframe').contents().find("#catsId option:selected").text().replace(/ /g,"");
                                 console.log(cat);
@@ -905,7 +912,7 @@ if (class_exists('WP_Zedity_Plugin')) {
             wp_deregister_script('jquery_fancybox');
             wp_deregister_script('jquery-fancybox');
 
-            wp_register_script('jquery-fancybox', '/wp-content/plugins/zedityplus/js/jquery.fancybox-1.3.8.js', array('jquery'));
+            wp_register_script('jquery-fancybox', '/wp-content/plugins/zedity-premium/js/jquery.fancybox-1.3.8.js', array('jquery'));
 
         }
 
