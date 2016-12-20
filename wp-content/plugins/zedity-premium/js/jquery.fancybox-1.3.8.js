@@ -118,17 +118,7 @@
 				href = null;
 			}
 
-			if (selectedOpts.type) {
-				type = selectedOpts.type;
-
-				if (!href) {
-					href = selectedOpts.content;
-				}
-
-			} else if (selectedOpts.content) {
-				type = 'html';
-
-			} else if (href) {
+			if (href) {
 				
 
 				if (href.match(imgRegExp) || $(obj).hasClass("image")) {
